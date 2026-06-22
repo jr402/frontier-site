@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Journal — Mireille Frenette & Benoit Guerville</title>
+<meta name="description" content="Le journal au quotidien : séances, trouvailles et réactions à ce qui bouge à la frontière de l'IA, dans notre voix.">
+<meta property="og:title" content="Journal — Mireille Frenette & Benoit Guerville">
+<meta property="og:description" content="Le journal au quotidien : séances, trouvailles et réactions à ce qui bouge à la frontière de l'IA, dans notre voix.">
+<link rel="alternate" hreflang="fr" href="https://255signal.com/journal.html">
+<link rel="alternate" hreflang="en" href="https://255signal.com/en/journal.html">
+<link rel="alternate" hreflang="x-default" href="https://255signal.com/journal.html">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="/index.html">PLACEHOLDER<span>·NAME</span></a>
+    <div style="display:flex;align-items:center;gap:1rem;">
+      <nav class="menu" id="menu">
+        <a href="/index.html">Accueil</a>
+        <a href="/journal.html" aria-current="page">Journal</a>
+        <a href="/projets.html">Projets</a>
+        <a href="/a-propos.html">À propos</a>
+      </nav>
+      <a class="lang-toggle" href="/en/journal.html">EN</a>
+      <a class="join-btn" href="#join">Rejoindre</a>
+      <button class="menu-toggle" id="toggle" aria-label="Menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="capture-strip"><div class="inner">
+    <p>Suivez le travail — un signal par jour, sans bruit.</p>
+    <form onsubmit="return fakeSubmit(event)"><input type="email" placeholder="votre@email.com" required aria-label="Email"><button type="submit">Suivre</button></form>
+  </div></div>
+</header>
+<div class="wrap">
+  <section class="hero" style="padding-bottom:2rem;">
+    <p class="eyebrow">Le journal</p>
+    <h1>Séance après séance, <em>y compris ce qui rate</em>.</h1>
+    <p class="lede">Chaque entrée est un vrai morceau du travail : ce qu'on a essayé, ce qu'on a décidé, et pourquoi. C'est la pièce qui s'agrandit chaque jour.</p>
+  </section>
+  <section class="block">
+    <div class="post-list">
+      <a class="post-item" href="/posts/fr/regardez-nous-penser.html">
+        <p class="meta">2026-06-22 · journal · l'approche</p>
+        <h3>On ne va pas vous montrer des conclusions.</h3>
+        <p>Tout le monde vend des conclusions propres. Nous, on pense devant vous, en temps réel, y compris ce qui rate.</p>
+      </a>
+      <!-- NOUVEAUX POSTS ICI — un bloc <a class="post-item"> par post. Un agent insère ici. -->
+    </div>
+  </section>
+</div>
+<footer class="site" id="join">
+  <div class="wrap"><div class="foot-grid">
+    <div>
+      <h3>Certaines vies tiennent en quelques lignes. <em>La nôtre déborde.</em></h3>
+      <p style="color:var(--paper-deep);max-width:26rem;">Laissez votre email et suivez le travail en train de se faire.</p>
+      <form onsubmit="return fakeSubmit(event)"><input type="email" placeholder="votre@email.com" required aria-label="Email"><button type="submit">Suivre</button></form>
+    </div>
+    <div class="colophon">
+      <p>PLACEHOLDER·NAME<br>Au travail, à la frontière de l'IA<br>FR · EN</p>
+      <p style="margin-top:1.5rem;"><a href="/index.html">Accueil</a> · <a href="/journal.html">Journal</a> · <a href="/projets.html">Projets</a> · <a href="/a-propos.html">À propos</a></p>
+      <p class="tagline">Construit en public — y compris les erreurs.</p>
+    </div>
+  </div></div>
+</footer>
+<script>
+  var t=document.getElementById('toggle'),m=document.getElementById('menu');
+  t.addEventListener('click',function(){var o=m.classList.toggle('open');t.setAttribute('aria-expanded',o);});
+  function fakeSubmit(e){e.preventDefault();alert('OK');return false;}
+</script>
+</body>
+</html>

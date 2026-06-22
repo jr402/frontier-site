@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects & Tools — Mireille Frenette & Benoit Guerville</title>
+<meta name="description" content="Projects in progress and tools we build for ourselves — and share with members while they're here.">
+<meta property="og:title" content="Projects & Tools — Mireille Frenette & Benoit Guerville">
+<meta property="og:description" content="Projects in progress and tools we build for ourselves — and share with members while they're here.">
+<link rel="alternate" hreflang="fr" href="https://255signal.com/projets.html">
+<link rel="alternate" hreflang="en" href="https://255signal.com/en/projects.html">
+<link rel="alternate" hreflang="x-default" href="https://255signal.com/projets.html">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="/en/index.html">PLACEHOLDER<span>·NAME</span></a>
+    <div style="display:flex;align-items:center;gap:1rem;">
+      <nav class="menu" id="menu">
+        <a href="/en/index.html">Home</a>
+        <a href="/en/journal.html">Journal</a>
+        <a href="/en/projects.html" aria-current="page">Projects</a>
+        <a href="/en/about.html">About</a>
+      </nav>
+      <a class="lang-toggle" href="/projets.html">FR</a>
+      <a class="join-btn" href="#join">Join</a>
+      <button class="menu-toggle" id="toggle" aria-label="Menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="capture-strip"><div class="inner">
+    <p>Follow the work — one signal a day, no hype.</p>
+    <form onsubmit="return fakeSubmit(event)"><input type="email" placeholder="your@email.com" required aria-label="Email"><button type="submit">Follow</button></form>
+  </div></div>
+</header>
+<div class="wrap">
+  <section class="hero" style="padding-bottom:2rem;">
+    <p class="eyebrow">Projects &amp; tools</p>
+    <h1>Built for ourselves first. <em>Shared while you're here.</em></h1>
+    <p class="lede">We don't sell software. We build tools to do our own work — and members get to use them, and watch how they're made, for as long as they're inside.</p>
+  </section>
+  <section class="block">
+    <div class="cards">
+      <div class="card soon"><p class="tag">In progress</p><h3>Image pipelines for filmmaking</h3><p>Benoit's studio work in the open — testing InVideo, Higgsfield and others, comparing, drawing conclusions, building a real production pipeline.</p></div>
+      <div class="card soon"><p class="tag">In progress</p><h3>Take chances, one day at a time</h3><p>A small daily tool for opening doors — built simple, used daily, refined in public.</p></div>
+      <div class="card soon"><p class="tag">In progress</p><h3>Bottleneck finder</h3><p>Spot what's blocking you, understand why, decide the next move. The kind of thinking tool we reach for constantly.</p></div>
+      <div class="card soon"><p class="tag">Soon</p><h3>More to come</h3><p>This room fills up fast. Follow the journal to see each tool the day it lands.</p></div>
+    </div>
+  </section>
+</div>
+<footer class="site" id="join">
+  <div class="wrap"><div class="foot-grid">
+    <div>
+      <h3>Be there when the tools drop.</h3>
+      <p style="color:var(--paper-deep);max-width:26rem;">Leave your email — we'll tell you the moment each one is ready to use.</p>
+      <form onsubmit="return fakeSubmit(event)"><input type="email" placeholder="your@email.com" required aria-label="Email"><button type="submit">Follow</button></form>
+    </div>
+    <div class="colophon">
+      <p>PLACEHOLDER·NAME<br>Working at the AI frontier<br>FR · EN</p>
+      <p style="margin-top:1.5rem;"><a href="/en/index.html">Home</a> · <a href="/en/journal.html">Journal</a> · <a href="/en/projects.html">Projects</a> · <a href="/en/about.html">About</a></p>
+      <p class="tagline">Built in public — including the errors.</p>
+    </div>
+  </div></div>
+</footer>
+<script>
+  var t=document.getElementById('toggle'),m=document.getElementById('menu');
+  t.addEventListener('click',function(){var o=m.classList.toggle('open');t.setAttribute('aria-expanded',o);});
+  function fakeSubmit(e){e.preventDefault();alert('OK');return false;}
+</script>
+</body>
+</html>

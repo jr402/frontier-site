@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projets & outils — Mireille Frenette & Benoit Guerville</title>
+<meta name="description" content="Des projets en cours et des outils qu'on construit pour nous, et qu'on partage avec les membres tant qu'ils sont là.">
+<meta property="og:title" content="Projets & outils — Mireille Frenette & Benoit Guerville">
+<meta property="og:description" content="Des projets en cours et des outils qu'on construit pour nous, et qu'on partage avec les membres tant qu'ils sont là.">
+<link rel="alternate" hreflang="fr" href="https://255signal.com/projets.html">
+<link rel="alternate" hreflang="en" href="https://255signal.com/en/projects.html">
+<link rel="alternate" hreflang="x-default" href="https://255signal.com/projets.html">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="/index.html">PLACEHOLDER<span>·NAME</span></a>
+    <div style="display:flex;align-items:center;gap:1rem;">
+      <nav class="menu" id="menu">
+        <a href="/index.html">Accueil</a>
+        <a href="/journal.html">Journal</a>
+        <a href="/projets.html" aria-current="page">Projets</a>
+        <a href="/a-propos.html">À propos</a>
+      </nav>
+      <a class="lang-toggle" href="/en/projects.html">EN</a>
+      <a class="join-btn" href="#join">Rejoindre</a>
+      <button class="menu-toggle" id="toggle" aria-label="Menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="capture-strip"><div class="inner">
+    <p>Suivez le travail — un signal par jour, sans bruit.</p>
+    <form onsubmit="return fakeSubmit(event)"><input type="email" placeholder="votre@email.com" required aria-label="Email"><button type="submit">Suivre</button></form>
+  </div></div>
+</header>
+<div class="wrap">
+  <section class="hero" style="padding-bottom:2rem;">
+    <p class="eyebrow">Projets &amp; outils</p>
+    <h1>Construits pour nous d'abord. <em>Partagés tant que vous êtes là.</em></h1>
+    <p class="lede">On ne vend pas de logiciel. On construit des outils pour notre propre travail, et les membres y ont accès, et voient comment ils se font, tant qu'ils sont là.</p>
+  </section>
+  <section class="block">
+    <div class="cards">
+      <div class="card soon"><p class="tag">En cours</p><h3>Pipelines d'image pour le cinéma</h3><p>Le travail de studio de Benoit, à découvert : tester InVideo, Higgsfield et d'autres, comparer, tirer des conclusions, bâtir un vrai pipeline de production.</p></div>
+      <div class="card soon"><p class="tag">En cours</p><h3>Oser, un jour à la fois</h3><p>Un petit outil quotidien pour ouvrir des portes : simple, utilisé tous les jours, affiné en public.</p></div>
+      <div class="card soon"><p class="tag">En cours</p><h3>Détecteur de goulots</h3><p>Repérer ce qui vous bloque, comprendre pourquoi, décider du prochain coup. Le genre d'outil de réflexion qu'on dégaine sans arrêt.</p></div>
+      <div class="card soon"><p class="tag">Bientôt</p><h3>Et la suite</h3><p>Cette pièce se remplit vite. Suivez le journal pour voir chaque outil le jour où il arrive.</p></div>
+    </div>
+  </section>
+</div>
+<footer class="site" id="join">
+  <div class="wrap"><div class="foot-grid">
+    <div>
+      <h3>Soyez là quand les outils sortent.</h3>
+      <p style="color:var(--paper-deep);max-width:26rem;">Laissez votre email : on vous prévient dès que chacun est prêt à l'emploi.</p>
+      <form onsubmit="return fakeSubmit(event)"><input type="email" placeholder="votre@email.com" required aria-label="Email"><button type="submit">Suivre</button></form>
+    </div>
+    <div class="colophon">
+      <p>PLACEHOLDER·NAME<br>Au travail, à la frontière de l'IA<br>FR · EN</p>
+      <p style="margin-top:1.5rem;"><a href="/index.html">Accueil</a> · <a href="/journal.html">Journal</a> · <a href="/projets.html">Projets</a> · <a href="/a-propos.html">À propos</a></p>
+      <p class="tagline">Construit en public — y compris les erreurs.</p>
+    </div>
+  </div></div>
+</footer>
+<script>
+  var t=document.getElementById('toggle'),m=document.getElementById('menu');
+  t.addEventListener('click',function(){var o=m.classList.toggle('open');t.setAttribute('aria-expanded',o);});
+  function fakeSubmit(e){e.preventDefault();alert('OK');return false;}
+</script>
+</body>
+</html>

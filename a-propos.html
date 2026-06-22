@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>À propos — Mireille Frenette & Benoit Guerville</title>
+<meta name="description" content="Trente ans à travailler ensemble, à refuser le chemin balisé. L'histoire complète des deux esprits derrière le travail.">
+<meta property="og:title" content="À propos — Mireille Frenette & Benoit Guerville">
+<meta property="og:description" content="Trente ans à travailler ensemble, à refuser le chemin balisé. L'histoire complète des deux esprits derrière le travail.">
+<link rel="alternate" hreflang="fr" href="https://255signal.com/a-propos.html">
+<link rel="alternate" hreflang="en" href="https://255signal.com/en/about.html">
+<link rel="alternate" hreflang="x-default" href="https://255signal.com/a-propos.html">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="/index.html">PLACEHOLDER<span>·NAME</span></a>
+    <div style="display:flex;align-items:center;gap:1rem;">
+      <nav class="menu" id="menu">
+        <a href="/index.html">Accueil</a>
+        <a href="/journal.html">Journal</a>
+        <a href="/projets.html">Projets</a>
+        <a href="/a-propos.html" aria-current="page">À propos</a>
+      </nav>
+      <a class="lang-toggle" href="/en/about.html">EN</a>
+      <a class="join-btn" href="#join">Rejoindre</a>
+      <button class="menu-toggle" id="toggle" aria-label="Menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="capture-strip"><div class="inner">
+    <p>Suivez le travail — un signal par jour, sans bruit.</p>
+    <form onsubmit="return fakeSubmit(event)"><input type="email" placeholder="votre@email.com" required aria-label="Email"><button type="submit">Suivre</button></form>
+  </div></div>
+</header>
+<div class="wrap">
+  <section class="hero" style="padding-bottom:2rem;">
+    <p class="eyebrow">À propos</p>
+    <h1>Le <em>grand écart</em>.</h1>
+    <p class="lede">Mireille a occupé des postes de direction à Montréal et Toronto, dans de grandes entreprises américaines. Benoit a failli démolir un Boeing avec une Renault 5 sur un tournage pour Air France. C'est peut-être ce grand écart qui résume le mieux notre complémentarité.</p>
+  </section>
+  <section class="block">
+    <div class="prose" style="max-width:42rem;">
+      <p>Journalistes, réalisateurs, producteurs, musiciens, auteurs, designers, enseignants, conférenciers, fondateurs : trente ans à travailler ensemble. Trente ans à refuser le chemin balisé, y compris le jour où l'équipe de Spielberg nous a tendu la main.</p>
+      <p>On a formé des étudiants qui travaillent aujourd'hui sur les plus grands films du monde. Écrit sur les technologies de l'image dans une dizaine de pays. Reçu l'équipe d'<em>Avatar</em> à Monaco pour parler de l'avenir du cinéma. Un soir, dans un village du sud de la France, le batteur des Scorpions, venu jouer dans des conditions improbables, s'est effondré dans les bras de Mireille en disant <em>« merci d'être là »</em>.</p>
+      <p>Notre marque de figurines, Raging Heroes, a fait 50 000 $ en trente secondes sur Kickstarter. 200 000 $ en six heures. 1 000 000 $ en un mois. On a recommencé deux ans plus tard, en atterrissant dans le top 0,05 % des projets les plus financés de ce géant du crowdfunding.</p>
+      <p>On a été diagnostiqués, récemment, TDAH, haut potentiel et TSA tous les deux. Avec le recul, ça expliquait bien des choses : pourquoi les frontières ne nous ont jamais vraiment arrêtés, et pourquoi l'indépendance nous est vitale.</p>
+      <p>Aujourd'hui, l'IA nous donne enfin les outils qu'on attendait, pour réaliser les nombreux projets qui vivent en nous, loin des logiques corporates, dans un cadre où l'on peut, avant tout, travailler avec des gens sincères et de vraies valeurs.</p>
+      <p style="font-style:italic;color:var(--ember);">Certaines vies tiennent en quelques lignes. La nôtre déborde.</p>
+    </div>
+  </section>
+</div>
+<footer class="site" id="join">
+  <div class="wrap"><div class="foot-grid">
+    <div>
+      <h3>Envie de suivre le travail ?</h3>
+      <p style="color:var(--paper-deep);max-width:26rem;">Un signal par jour. La pensée, les outils, et ce qui ne marche pas encore.</p>
+      <form onsubmit="return fakeSubmit(event)"><input type="email" placeholder="votre@email.com" required aria-label="Email"><button type="submit">Suivre</button></form>
+    </div>
+    <div class="colophon">
+      <p>PLACEHOLDER·NAME<br>Au travail, à la frontière de l'IA<br>FR · EN</p>
+      <p style="margin-top:1.5rem;"><a href="/index.html">Accueil</a> · <a href="/journal.html">Journal</a> · <a href="/projets.html">Projets</a> · <a href="/a-propos.html">À propos</a></p>
+      <p class="tagline">Construit en public — y compris les erreurs.</p>
+    </div>
+  </div></div>
+</footer>
+<script>
+  var t=document.getElementById('toggle'),m=document.getElementById('menu');
+  t.addEventListener('click',function(){var o=m.classList.toggle('open');t.setAttribute('aria-expanded',o);});
+  function fakeSubmit(e){e.preventDefault();alert('OK');return false;}
+</script>
+</body>
+</html>
