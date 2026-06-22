@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mireille Frenette & Benoit Guerville — working at the AI frontier</title>
+<meta name="description" content="Two practitioners with thirty years of refusing the obvious path. We work at the AI frontier and show the thinking itself — live, including what fails.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ HEADER (shared shell) ============ -->
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="index.html">PLACEHOLDER<span>·NAME</span></a>
+    <div style="display:flex;align-items:center;gap:1rem;">
+      <nav class="menu" id="menu">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="journal.html">Journal</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+      </nav>
+      <a class="join-btn" href="#join">Join</a>
+      <button class="menu-toggle" id="toggle" aria-label="Menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="capture-strip">
+    <div class="inner">
+      <p>Follow the work — one signal a day, no hype.</p>
+      <form onsubmit="return fakeSubmit(event)">
+        <input type="email" placeholder="your@email.com" required aria-label="Email">
+        <button type="submit">Follow</button>
+      </form>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO — the thesis ============ -->
+<div class="wrap">
+  <section class="hero">
+    <p class="eyebrow">Mireille Frenette &amp; Benoit Guerville</p>
+    <h1>Thirty years of refusing the obvious path. Now AI lets us show you <em>how we think</em>.</h1>
+    <p class="lede">Not the polished conclusions everyone else sells — the thinking itself, live, including what fails. Come work alongside us.</p>
+    <div class="spec-line">
+      <span><b>Two</b> minds, one unit</span>
+      <span><b>FR · EN</b></span>
+      <span><b>Strategy</b> &amp; <b>image</b></span>
+      <span>Built in public</span>
+    </div>
+  </section>
+</div>
+
+<!-- ============ THE OVERFLOW — who we are, contrast layout ============ -->
+<div class="wrap">
+  <section class="block">
+    <p class="section-label">Who's talking</p>
+    <div class="split">
+      <div class="prose">
+        <p>Mireille held executive roles in Montreal and Toronto inside large American firms. Benoit nearly demolished a Boeing with a Renault 5 on a shoot for Air France. <em>Maybe that gap is the best summary of how we complement each other.</em></p>
+        <p>Journalists, directors, producers, musicians, authors, designers, teachers, speakers, founders — thirty years working together, thirty years refusing the marked path, including when Spielberg's team reached out.</p>
+        <p>Today AI finally gives us the tools we'd been waiting for — to do the many projects that live in us, far from corporate logic, working above all with sincere people and real values.</p>
+      </div>
+      <div class="facts">
+        <div class="fact"><b>30 years</b> working together</div>
+        <div class="fact"><b>10+ countries</b> writing on image technology</div>
+        <div class="fact"><b>$1M in a month</b> on Kickstarter — twice (top 0.05%)</div>
+        <div class="fact"><b>Avatar's team</b> brought to Monaco</div>
+        <div class="fact"><b>Students</b> now on the world's biggest films</div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ LATEST JOURNAL ============ -->
+<div class="wrap">
+  <section class="block">
+    <p class="section-label">From the journal</p>
+    <h2 class="big">We document everything. Including the dead ends.</h2>
+    <div class="post-list">
+      <a class="post-item" href="posts/hello.html">
+        <p class="meta">Coming soon · the first entry</p>
+        <h3>This is where the daily thinking lands.</h3>
+        <p>Sessions, findings, reactions to what's moving at the frontier — in our own voice, with our own angle.</p>
+      </a>
+    </div>
+  </section>
+</div>
+
+<!-- ============ PROJECTS / TOOLS (framed, fills in days) ============ -->
+<div class="wrap">
+  <section class="block">
+    <p class="section-label">Projects &amp; tools</p>
+    <h2 class="big">Built for ourselves first. Shared while you're here.</h2>
+    <div class="cards">
+      <div class="card soon"><p class="tag">In progress</p><h3>Image pipelines for film</h3><p>Benoit's studio work — testing, comparing, drawing conclusions in the open.</p></div>
+      <div class="card soon"><p class="tag">In progress</p><h3>Everyday decision tools</h3><p>Small, sharp tools we use to take chances and find bottlenecks — yours while you're a member.</p></div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ FOOTER (shared shell) ============ -->
+<footer class="site" id="join">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>Some lives fit in a few lines. <em>Ours overflows.</em></h3>
+        <p style="color:var(--paper-deep);max-width:26rem;">Leave your email and follow the work as it happens — the thinking, the tools, the things that don't work yet.</p>
+        <form onsubmit="return fakeSubmit(event)">
+          <input type="email" placeholder="your@email.com" required aria-label="Email">
+          <button type="submit">Follow</button>
+        </form>
+      </div>
+      <div class="colophon">
+        <p>PLACEHOLDER·NAME<br>Working at the AI frontier<br>FR · EN</p>
+        <p style="margin-top:1.5rem;"><a href="journal.html">Journal</a> · <a href="projects.html">Projects</a> · <a href="about.html">About</a></p>
+        <p class="tagline">Built in public — including the errors.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ GENTLE POPUP ============ -->
+<div class="pop" id="pop">
+  <div class="panel">
+    <button class="close" id="popClose" aria-label="Close">×</button>
+    <p class="eyebrow">Before you go</p>
+    <h3>Follow the frontier with us.</h3>
+    <p>One signal a day. No hype, no noise — just what's actually worth your attention, in plain language.</p>
+    <form onsubmit="return fakeSubmit(event)">
+      <input type="email" placeholder="your@email.com" required aria-label="Email">
+      <button class="go" type="submit">Follow</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  // mobile menu
+  var t = document.getElementById('toggle'), m = document.getElementById('menu');
+  t.addEventListener('click', function(){
+    var open = m.classList.toggle('open');
+    t.setAttribute('aria-expanded', open);
+  });
+
+  // gentle one-time popup: shows after 25s OR on exit-intent, once per session.
+  // NOTE: uses an in-memory flag (resets on reload) because this is a static
+  // preview. When live, swap to your email tool's native popup, which handles
+  // "remember dismissal" properly across visits.
+  var shown = false;
+  function showPop(){ if(shown) return; shown = true; document.getElementById('pop').classList.add('show'); }
+  setTimeout(showPop, 25000);
+  document.addEventListener('mouseout', function(e){ if(!e.relatedTarget && e.clientY <= 0) showPop(); });
+  document.getElementById('popClose').addEventListener('click', function(){ document.getElementById('pop').classList.remove('show'); });
+  document.getElementById('pop').addEventListener('click', function(e){ if(e.target.id==='pop') this.classList.remove('show'); });
+
+  // placeholder submit — replaced by real email tool when live
+  function fakeSubmit(e){ e.preventDefault(); alert('Email capture works here — we\'ll connect your real list when we go live.'); return false; }
+</script>
+</body>
+</html>

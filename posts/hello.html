@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why we finally built this — Journal 001</title>
+<meta name="description" content="Two years of thinking, one afternoon of deciding to start. The first journal entry.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="../index.html">PLACEHOLDER<span>·NAME</span></a>
+    <div style="display:flex;align-items:center;gap:1rem;">
+      <nav class="menu" id="menu">
+        <a href="../index.html">Home</a>
+        <a href="../journal.html">Journal</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../about.html">About</a>
+      </nav>
+      <a class="join-btn" href="#join">Join</a>
+      <button class="menu-toggle" id="toggle" aria-label="Menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <article class="post">
+    <p class="meta">Journal 001 · the beginning</p>
+    <h1>Why we finally built this.</h1>
+    <div class="body">
+      <p>For two years this lived in our heads. The idea was complete, perfectly formed, and entirely invisible — which is another way of saying it didn't exist. <em>This is the example post.</em> Replace it with the real first entry, or let an agent write it.</p>
+      <p>Each new entry is a single file in the <code>posts/</code> folder. Add a file, the post is live. No dashboard, no login, no clicking through an admin panel — which is exactly what makes it something a machine can do for us, while we keep the one thing a machine can't: the judgment about what's worth saying.</p>
+      <h2>How this place works</h2>
+      <p>We scan the frontier. We decide what matters. We say what we think. The rest — the drafting, the translating, the publishing, the clipping — gets automated around that judgment. You're reading the output end of that pipeline.</p>
+      <p><a href="../journal.html" style="color:var(--ember);">← Back to the journal</a></p>
+    </div>
+  </article>
+</div>
+
+<footer class="site" id="join">
+  <div class="wrap"><div class="foot-grid">
+    <div>
+      <h3>Follow along.</h3>
+      <p style="color:var(--paper-deep);max-width:26rem;">One signal a day, in your inbox.</p>
+      <form onsubmit="return fakeSubmit(event)"><input type="email" placeholder="your@email.com" required aria-label="Email"><button type="submit">Follow</button></form>
+    </div>
+    <div class="colophon">
+      <p>PLACEHOLDER·NAME<br>Working at the AI frontier<br>FR · EN</p>
+      <p class="tagline">Built in public — including the errors.</p>
+    </div>
+  </div></div>
+</footer>
+
+<script>
+  var t=document.getElementById('toggle'),m=document.getElementById('menu');
+  t.addEventListener('click',function(){var o=m.classList.toggle('open');t.setAttribute('aria-expanded',o);});
+  function fakeSubmit(e){e.preventDefault();alert('Email capture works here — we\'ll connect your real list when we go live.');return false;}
+</script>
+</body>
+</html>
