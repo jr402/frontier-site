@@ -79,6 +79,15 @@ nav.menu a:hover, nav.menu a[aria-current="page"] { color: var(--ink); border-co
 }
 .join-btn:hover { background: var(--ember); }
 
+/* FR/EN language toggle — sits in the header bar, deliberately quiet */
+.lang-toggle {
+  font-family: var(--mono); font-size: .74rem; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--ink-soft);
+  text-decoration: none; padding: .55rem .4rem;
+  border-bottom: 1px solid transparent; transition: .15s; white-space: nowrap;
+}
+.lang-toggle:hover { color: var(--ink); border-color: var(--ember); }
+
 /* email capture line UNDER the menu line */
 .capture-strip {
   border-top: 1px solid var(--line);
